@@ -8,6 +8,9 @@ package com.tt.springbootorder.controller;
         import com.tt.springbootorder.pojo.User;
         import com.tt.springbootorder.service.RoleService;
         import com.tt.springbootorder.service.UserService;
+        import io.swagger.annotations.Api;
+        import io.swagger.annotations.ApiImplicitParam;
+        import io.swagger.annotations.ApiOperation;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.stereotype.Controller;
         import org.springframework.ui.Model;
@@ -25,6 +28,7 @@ package com.tt.springbootorder.controller;
  * @UpdateUser: Administrator
  * @Version: 1.0
  **/
+//@Api(description = "用户接口")
 @Controller
 @RequestMapping("user")
 public class UserController {
@@ -206,6 +210,8 @@ public class UserController {
         return "useradd";
     }
 
+//    @ApiOperation(value = "使用用户编码查找用户",notes = "查询用户")
+//    @ApiImplicitParam(name = "userCode",value = "用户编码",required = false, paramType = "query",dataType = "String")
     @RequestMapping("/findUserCode")
     @ResponseBody
     public SpringJSONResult findUserCode(@RequestParam("userCode") String userCode) throws Exception {
