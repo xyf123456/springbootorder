@@ -8,8 +8,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@EnableAutoConfiguration
-@EnableSwagger2
+//@EnableAutoConfiguration
+//@EnableSwagger2
 @SpringBootApplication
 @MapperScan(value = "com.tt.springbootorder.dao")
 public class SpringBootOrderApp extends SpringBootServletInitializer{

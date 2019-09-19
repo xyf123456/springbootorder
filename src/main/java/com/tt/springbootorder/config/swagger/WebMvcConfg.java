@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @UpdateUser: Administrator
  * @Version: 1.0
  **/
-@Configuration
+//@Configuration
 //public class WebMvcConfg extends WebMvcConfigurationSupport {
 public class WebMvcConfg extends WebMvcConfigurerAdapter {
 
